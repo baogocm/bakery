@@ -1,0 +1,247 @@
+
+/* Card and title css */
+
+.nav-hover:hover{
+  
+  background-color: burlywood;
+  opacity: 0.8;
+}
+
+
+.card img {
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.card img.hover-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transform: scale(1.05);
+  cursor:pointer;
+}
+
+.card:hover img.default-img {
+  opacity: 0;
+}
+
+.card:hover img.hover-img {
+  opacity: 1;
+}
+
+#title:hover{
+  color:rgb(203, 164, 116);
+}
+
+
+  .img-social:hover{
+    transform: scale(1.2);
+  }
+
+
+  .card-img-overlay {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    
+}
+.card-title {
+    font-size: 2rem;
+    text-decoration: none;
+}
+.card-text {
+    font-size: 1rem;
+}
+
+/* Reponsive */
+@media (min-width: 768px) {
+    .card-header {
+        font-size: 3rem;
+    }
+    
+    
+    .card-title{
+      font-size: 1.5rem;
+    }
+    
+}
+
+
+
+@media (max-width: 1200px){
+  .nav-item{
+    font-size: 1.25rem;
+    font-style: italic;
+    margin-left:10px;
+  }
+
+  .nav-icon{
+    width: 10px;
+    height: auto;
+  }
+}
+
+@media (max-width:2000px){
+  .lgw{
+    width: 120px;
+  }
+}
+
+
+@media (max-width: 768px){
+  .card-title{
+    font-size: 1rem;
+  }
+  
+.lgw{
+  width: 60px;
+}
+
+.card-text{
+  font-size:0.75rem;
+}
+
+
+  
+
+  .nav-item{
+    font-size: 0.75rem;
+    font-style: italic;
+    margin-left:10px;
+  }
+
+
+  .nav-icon{
+    width: 10px;
+    height: auto;
+  }
+}
+/* Social button */
+.floating-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+.floating-btn .btn {
+    margin-bottom: 10px;
+    animation: float 2s ease-in-out infinite;
+    border: none;
+    background: none;
+
+}
+ @keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+.intro-text {
+  padding: 50px 20px;
+  text-align: center;
+  background-color: #f8f9fa;
+}
+@media (min-width: 768px) {
+  .intro-text {
+      padding: 100px 40px;
+      text-align: left;
+  }
+}
+
+.error{
+  color:red;
+}
+
+/* Màn hình chờ */
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  overflow: hidden;
+}
+#loading-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #f8f9fa;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+.spinner-border {
+  width: 3rem;
+  height: 3rem;
+}
+#main-content {
+  display: none;
+}
+
+/* Banh mi */
+
+.product-image {
+  display: none;
+  width: 100%;
+  height: auto;
+}
+
+.product-image.active {
+  display: block;
+}
+
+.thumbnail img {
+  cursor: pointer;
+  margin-bottom: 10px;
+  border: 2px solid transparent;
+}
+
+.thumbnail img:hover {
+  border-color: burlywood;
+}
+
+.none-text{
+  text-decoration: none;
+}
+
+.text-color{
+  color:rgb(247, 234, 216);
+}
+
+.bg-color{
+  background-color: rgb(247, 234, 216);
+}
+
+.bg-logo{
+  background-color: #899494;
+}
+
+.li-hover:hover{
+  color:rgb(247, 234, 216);
+}
+
+.li{
+  text-decoration: none;
+}
+
+
+.imgvc {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto; /* Để hình ảnh nằm giữa nếu muốn */
+}
+
+
+.custom-margin {
+  margin-left: 30px; /* Điều chỉnh giá trị này để thay đổi độ lệch */
+}
